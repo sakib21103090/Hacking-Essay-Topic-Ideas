@@ -1,0 +1,21 @@
+.imgp{
+    width: 50px;
+    margin: 10px;
+   
+    
+    
+}
+.profile{
+    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.text{
+    text-align: left;
+}
+.click{
+    text-align: left;
+    margin: 8px;
+}

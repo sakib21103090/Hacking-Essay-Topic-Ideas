@@ -1,10 +1,26 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Card from '../Card/Card';
 
 const Cards = () => {
+    const [Hacking,setHacking]=useState([]);
+   
+    useEffect(()=>{
+        fetch('/public/Hacking.json')
+        .then(res=>res.json())
+         .then(data=>setHacking(data))
+    },[]);
     return (
         <div>
-            <p>adjfkdjlkfj</p>
-        </div>
+                    {
+                        Hacking.map(Hack=>
+                             <Card
+                            Hack={Hack}
+                            key={Hack.id}  
+                            ></Card> )
+                    }
+
+            </div>
+        
     );
 };
 
