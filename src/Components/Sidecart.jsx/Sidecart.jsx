@@ -3,7 +3,7 @@ import React from 'react';
 const Sidecart = () => {
     return (
         <div>
-            <p>the  naem</p>
+            <p>naem</p>
         </div>
     );
 };
