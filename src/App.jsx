@@ -18,7 +18,7 @@ function App() {
      <Header></Header>
      </div>
      <div className='main row gap-5 d-flex m-auto mt-2 '>
-       <div className='cart-container col-md-7 card m'>
+       <div className='cart-container col-md-7 card '>
         <Cards></Cards>
        </div>
        <div  className='sideCard-container col-md-4 card'>

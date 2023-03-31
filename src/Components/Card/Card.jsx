@@ -1,5 +1,5 @@
 import React from 'react';
-import './Cart.css'
+import './Card.css'
 
 const Card = (props) => {
     const {id,Author,Title,date,img,profile,time}=props.Hack;

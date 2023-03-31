@@ -8,7 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Header = () => {
     return (
         <div>
-             <Navbar className='bg-secondary ' expand="lg">
+             <Navbar className='bg-secondary rounded ' expand="lg">
       <Container fluid>
         <Navbar.Brand href="#">Hacking Essay Topic Ideas</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -20,15 +20,10 @@ const Header = () => {
           >
             
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            
-          </Form>
+          
+            <img className='imgp' src="./hacker.png" alt="" />
+            <button >sign up</button>
+          
         </Navbar.Collapse>
       </Container>
     </Navbar>
