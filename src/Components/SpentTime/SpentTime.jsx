@@ -1,7 +1,7 @@
 import React from 'react';
 import './SpendTime.css'
 const SpentTime = ({cart2}) => {
-    console.log(cart2)
+    
     let TotalTime=0;
     for(const Hack of cart2)
     TotalTime=TotalTime+parseInt(Hack.time);

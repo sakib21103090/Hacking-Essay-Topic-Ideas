@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Card = (props) => {
-    const {id,Author,Title,date,img,profile,time}=props.Hack;
+    const {Author,Title,date,img,profile,time}=props.Hack;
     const handleShowCard=props.handleShowCard;
     const handleShowTime=props.handleShowTime;
        
