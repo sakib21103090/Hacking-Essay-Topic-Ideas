@@ -5,6 +5,8 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Header from './Components/Header/Header';
 import Cards from './Components/Cards/Cards';
 import Ans from './Components/Ans/Ans';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,7 +28,7 @@ function App() {
 
        </div>
      </div>
-      
+      <ToastContainer></ToastContainer>
     </div>
   )
 }

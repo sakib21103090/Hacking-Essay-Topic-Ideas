@@ -3,11 +3,13 @@ import './Card.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
+
 const Card = (props) => {
     const {Author,Title,date,img,profile,time}=props.Hack;
     const handleShowCard=props.handleShowCard;
     const handleShowTime=props.handleShowTime;
-       
+
+    
     return (
         <div>
              <div className='card-Container '>
@@ -34,6 +36,7 @@ const Card = (props) => {
                     </div>
                     <div className="click">
                     <p onClick={()=>handleShowTime(props.Hack)} >Mark as read</p>
+                    
                     
                     </div>
                     <h3></h3>
