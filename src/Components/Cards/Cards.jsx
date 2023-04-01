@@ -6,7 +6,7 @@ import Sidecart from '../Sidecart/Sidecart';
 const Cards = () => {
     const [Hacking,setHacking]=useState([]);
     const [cart,setCart]=useState([]);
-    const [cart2,setCart2]=useState([0]);
+    const [cart2,setCart2]=useState([]);
    
     useEffect(()=>{
         fetch('/public/Hacking.json')
