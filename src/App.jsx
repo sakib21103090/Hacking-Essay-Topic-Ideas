@@ -7,7 +7,6 @@ import 'bootstrap/dist/js/bootstrap.min.js';
 import Header from './Components/Header/Header';
 import Cards from './Components/Cards/Cards';
 import Sidecart from './Components/Sidecart/Sidecart';
-import SpentTime from './Components/SpentTime/SpentTime';
 
 function App() {
   const [count, setCount] = useState(0)

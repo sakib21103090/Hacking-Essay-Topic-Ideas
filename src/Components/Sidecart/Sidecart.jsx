@@ -2,7 +2,7 @@ import React from 'react';
 import './Sidecart.css'
 
 const Sidecart = ({cart}) => {
-    // console.log(props.a)
+    // console.log(cart)
     
     
     return (
