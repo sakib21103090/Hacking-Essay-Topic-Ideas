@@ -1,8 +1,13 @@
 import React from 'react';
 import './Card.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const Card = (props) => {
     const {id,Author,Title,date,img,profile,time}=props.Hack;
+    const handleShowCard=props.handleShowCard;
+    const handleShowTime=props.handleShowTime;
+       
     return (
         <div>
              <div className='card-Container '>
@@ -21,14 +26,14 @@ const Card = (props) => {
                         </div>
                         </div>
                         <div className=''>
-                           <p>0{time}min read</p>
+                           <p>0{time}min read <FontAwesomeIcon onClick={()=>handleShowCard(props.Hack)} icon={faBookmark} /> </p>
                         </div>
                     </div>
                     <div>
                         <h2 className='text'>{Title}</h2>
                     </div>
                     <div className="click">
-                    <a href="/Mark as read">Mark as read</a>
+                    <p onClick={()=>handleShowTime(props.Hack)} >Mark as read</p>
                     
                     </div>
                     <h3></h3>

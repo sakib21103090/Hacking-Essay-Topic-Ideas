@@ -1,9 +1,19 @@
 import React from 'react';
-
-const SpentTime = () => {
+import './SpendTime.css'
+const SpentTime = ({cart2}) => {
+    console.log(cart2)
     return (
         <div>
-            cart 2
+        <div>
+              
+            
+             {
+                cart2.map(b=>
+                    <p className='time-style card'>Spent time on read :0{b.time}min</p>
+                    )
+             }
+
+        </div>
         </div>
     );
 };

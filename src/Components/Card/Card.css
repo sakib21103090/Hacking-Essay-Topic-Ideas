@@ -17,5 +17,7 @@
 }
 .click{
     text-align: left;
-    margin: 8px;
+    margin: 15px;
+    text-decoration-line: underline;
+    color: blue;
 }
